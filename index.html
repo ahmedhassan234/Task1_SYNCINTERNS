@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page (Task1 "Shopping") </title>
+
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- link file css -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="contanier">
+
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>sHoPinG</h1>
+            </div>
+
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>outfit of the day</span>
+                <h3>all your</h3>
+                <h1>styles are here</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> 
+                    Doloremque unde sunt eum illum ab tempora illo iure sequi <br> minus culpa.</p>
+                    <a href="#" class="btn">buy now</a>
+            </div>
+
+            <div class="div-img">
+                <img id="big-img" src="computer-png-28431.png" alt="">
+            </div>
+
+            <div class="small-img">
+                <img onclick="myProduct(this.src)" src="computer-png-28440.png" alt="">
+                <img onclick="myProduct(this.src)" src="laptop3.png" alt="">
+                <img onclick="myProduct(this.src)" src="laptop2.png" alt="">
+                <img onclick="myProduct(this.src)" src="sword-png-13996.png" alt="">
+                <img onclick="myProduct(this.src)" src="laptop-png-28813.png" alt="">
+
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row ">
+                
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li> <a href="#"> home</a></li>
+                        <li> <a href="#"> about us</a></li>
+                        <li> <a href="#"> shop</a></li>
+                        <li> <a href="#">contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li> <a href="#">FAQ</a></li>
+                        <li> <a href="#">Shopping</a></li>
+                        <li> <a href="#">returns</a></li>
+                        <li> <a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop </h4>
+                    <ul>
+                        <li> <a href="#">laptop</a></li>
+                        <li> <a href="#">phone</a></li>
+                        <li> <a href="#">desktop</a></li>
+                        <li> <a href="#">shoes</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links"></div>
+                    
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myProduct(product){
+            bigImage.src = product
+        }
+    </script>
+</body>
+</html>

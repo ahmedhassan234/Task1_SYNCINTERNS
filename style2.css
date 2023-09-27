@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.contanier{
+    width: 100%;
+    height: 100vh;
+    padding: 0 15px 15px;
+}
+.contanier nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+nav .logo i{
+    color: #343738;
+    font-size: 28px;
+}
+nav .logo h1{
+    color: #444;
+    font-size: 28px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+    height: 80px;
+    position: relative;
+    line-height: 80px;
+    cursor: pointer;
+}
+nav ul li::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #4e4e4e;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s;
+}
+nav ul li:hover::after,
+nav ul li.active::after{
+    width: 100%;
+}
+nav ul li a{
+    color: #444;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+nav ul li a:hover,
+nav ul li.active a{
+    color: #b4b4b4;
+}
+
+
+.contanier .content{
+    width: 100%;
+    height: calc(100vh - 95px);
+    background: linear-gradient(130deg, #525252, #000000);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+.content .div-text span{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-weight: bold;
+}
+.content .div-text h3{
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    font-size: 50px;
+    font-weight: normal;
+    margin: 20px 0 8px;
+    color: #ffffff;
+}
+.content .div-text h1{
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.content .div-text p{
+    color: #d3d3d3;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1.3px;
+    margin-bottom: 55px;
+}
+.content .div-text .btn{
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.content .div-text .btn:hover{
+    color: #fff;
+    background-color: #000000;
+}
+
+
+
+.content .div-img img{
+    width: 350px;
+}
+.content .small-img{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 80px;
+}
+.content .small-img img{
+    width: 80px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.content .small-img img:hover{
+    transform: scale(1.2);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+
+
+.footer{
+    background: linear-gradient(130deg, #525252, #000000);
+    justify-content: space-between;
+    padding: 70px 0;
+    
+    border-radius: 10px;
+    
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize ;
+    margin-bottom: 35px;
+    font-weight: 500 ;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #8b8b8b;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px ;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0 ;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #525252;
+    background-color: #ffffff;
+
+}
+
+@media (max-width: 767px) {
+    .footer-col{
+        width: 25%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width :574px) {
+    .footer-col{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
